@@ -167,6 +167,7 @@
   
 <ul id="markdown-toc">
   <li><a href="#1ndnts-documentation-and-tutorial" id="markdown-toc-1ndnts-documentation-and-tutorial">1.NDNts documentation and tutorial</a></li>
+  <li><a href="#2-improving-ndn-workspace-application-with-openidconnect" id="markdown-toc-2-improving-ndn-workspace-application-with-openidconnect">2. Improving NDN Workspace Application with OpenIDConnect</a></li>
 </ul>
 
 <h2 id="1ndnts-documentation-and-tutorial">1.NDNts documentation and tutorial</h2>
@@ -207,6 +208,44 @@
 <p><strong>Expected outcomes</strong></p>
 <ul>
   <li>More detailed documentation at https://ndnts-docs.ndn.today/</li>
+</ul>
+
+<h2 id="2-improving-ndn-workspace-application-with-openidconnect">2. Improving NDN Workspace Application with OpenIDConnect</h2>
+
+<p><strong>Project Lead:</strong></p>
+<ul>
+  <li>Tianyuan Yu</li>
+</ul>
+
+<!-- Project Members: TBD -->
+<p><strong>Prefered Team Size:</strong></p>
+<ul>
+  <li>2-4</li>
+</ul>
+
+<p><strong>Targeted participant</strong></p>
+<ul>
+  <li>People with previous NDN experience</li>
+</ul>
+
+<p><strong>How does your proposal benefit NDN?</strong></p>
+<ul>
+  <li>The NDN Workspace users currently obtain their application certificates via proving they own a NDN Testbed certificate. Since NDN Workspace is a web application, a more intuitive approach is to utilize users’ existing web identities to authenticate users. OpenIDConnect is a good fit in this case.</li>
+</ul>
+
+<p><strong>Briefly describe the tasks</strong></p>
+<ul>
+  <li>Implement the following process: the user asks for their web identity provider for authentication, obtain the token (or equivalent) from the provider, sends it to Workspace CA/server, then the CA/server validates the token, assigns name, and issue certificate.</li>
+</ul>
+
+<p><strong>Any specific tools or language</strong></p>
+<ul>
+  <li>TypeScript, Python</li>
+</ul>
+
+<p><strong>Expected outcomes</strong></p>
+<ul>
+  <li>A Github PR</li>
 </ul>
 
 </section>
